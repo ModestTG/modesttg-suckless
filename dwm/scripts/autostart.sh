@@ -1,5 +1,11 @@
 #!/bin/bash
 
-/usr/bin/lxpolkit &
+# Copy to $HOME/.local/share/dwm and ensure you have the autostart patch applied
+
 /usr/bin/pasystray &
-xsetroot -cursor_name left_ptr
+/usr/bin/lxpolkit &
+feh --bg-fill --randomize $HOME/.wallpaper
+while true; do
+	xsetroot -name "$(date)"
+	sleep 1s
+done
