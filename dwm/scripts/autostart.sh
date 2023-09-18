@@ -6,4 +6,4 @@
 /usr/bin/lxpolkit &
 feh --bg-fill --randomize $HOME/.wallpaper &
 picom --config "$HOME/.config/picom/picom.conf" &
-slstatus &
+/home/eweishaar/repos/modesttg-suckless/dwm-bar/dwm_bar.sh &
