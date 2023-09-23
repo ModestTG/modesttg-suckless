@@ -31,7 +31,7 @@ dwm_spotify () {
             fi
             
             if [ "$SHUFFLE" = "On" ]; then
-                SHUFFLE=" 🔀"
+                SHUFFLE=" "
             else
                 SHUFFLE=""
             fi
