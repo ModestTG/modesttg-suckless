@@ -34,6 +34,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Pavucontrol",     NULL,       NULL,       0,     1,           -1 }, /* volume control always floating */
+	{ "Brave-browser",   NULL,       "Bitwarden",0,     1,           -1 }, /* Bitwarden popout floating */
 	{ "Brave-browser",   NULL,       NULL,       1<<1,  0,           -1 }, /* Brave alwasy opens on tag 2 */
 
 };
