@@ -34,8 +34,10 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Pavucontrol",     NULL,       NULL,       0,     1,           -1 }, /* volume control always floating */
-	{ "Brave-browser",   NULL,       "Bitwarden",0,     1,           -1 }, /* Bitwarden popout floating */
+	{ NULL,              NULL,       "Bitwarden",0,     1,           -1 }, /* Bitwarden popout floating */
 	{ "Brave-browser",   NULL,       NULL,       1<<1,  0,           -1 }, /* Brave alwasy opens on tag 2 */
+	{ "Spotify",         NULL,       NULL,       1<<2,  0,           -1 }, /* Spotify alwasy opens on tag 3 */
+	{ "discord",         NULL,       NULL,       1<<3,  0,           -1 }, /* Discord alwasy opens on tag 4 */
 
 };
 
@@ -66,7 +68,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
