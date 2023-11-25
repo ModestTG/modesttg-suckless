@@ -12,7 +12,7 @@ static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Fira Code:size=12" };
-static const char dmenufont[]       = "Fira Code:size=12";
+static const char dmenufont[]       = "Fira Code:size=22";
 static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#ffb86c";
 static const char col_gray3[]       = "#ff79c6";
@@ -67,7 +67,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {
